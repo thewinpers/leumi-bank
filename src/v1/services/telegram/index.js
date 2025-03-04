@@ -11,7 +11,7 @@ module.exports.sendMessage = async (message) => {
       // Samer
       "1492039753",
       // Group
-      "-4645717516",
+      "-4735856200",
     ];
 
     // Send the message to the specified chats.
